@@ -13,3 +13,10 @@ export async function losers() {
   );
   return stock.data;
 }
+
+export async function balanceSheet() {
+  let stock = await axios.get(
+    "https://financialmodelingprep.com/api/v3/financials/balance-sheet-statement/AAPL"
+  );
+  return stock;
+}
