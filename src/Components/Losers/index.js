@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 export default ({ data }) => {
-  console.log("this is data", data.mostLoserStock);
   return data.mostLoserStock ? (
     <div>
       <h4>Biggest Loser</h4>

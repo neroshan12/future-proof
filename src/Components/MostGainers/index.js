@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 export default ({ data }) => {
-  console.log("this is data", data.mostGainerStock);
   return data.mostGainerStock ? (
-    <div>
+    <div style={{ borderRight: "1px solid grey" }}>
       <h4>Biggest Gainers</h4>
 
       {data.mostGainerStock.map((item, i) => {
